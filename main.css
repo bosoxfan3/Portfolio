@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.project {
+  height: 200px;
+  background-color: grey;
+  border: 2px solid black;
+}
