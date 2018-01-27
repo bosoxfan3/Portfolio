@@ -123,7 +123,7 @@ nav {
 .bio-page {
   text-align: center;
   background-color: rgb(245, 221, 169);
-  padding-bottom: 600px;
+  padding-bottom: 420px;
 }
 
 .bio-title {
@@ -189,6 +189,7 @@ button:hover {
 
 .tech-logo {
   display: inline-block;
+  position: relative;
 }
 
 .tech-logo img {
@@ -211,7 +212,7 @@ button:hover {
   margin-left: -25px;
 }
 
-.tech-logo:hover .tooltip-text{
+.tech-logo:hover .tooltip-text {
   visibility: visible;
 }
 
@@ -246,9 +247,48 @@ footer a img {
   width: 20px;
 }
 
+@media only screen and (max-width: 850px) {
+  .portfolio-img {
+    width: 350px;
+    height: 250px;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .profile-photo {
     width: 30%;
+  }
+  .portfolio-img {
+    width: 300px;
+    height: 200px;
+  }
+  .project p {
+    font-size: 12pt;
+  }
+  .tech-logo img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .portfolio-page {
+    padding-bottom: 1600px;
+  }
+  .portfolio-img {
+    width: 350px;
+    height: 250px;
+    padding-top: 50px;
+  }
+  .restfull {
+    position: relative;
+    left: 0%;
+  }
+  #top-section {
+    padding-top: 70px;
+  }
+  #bottom-section {
+    padding-top: 0px;
   }
 }
 
@@ -271,5 +311,8 @@ footer a img {
     font-size: 14pt;
     width: 80%;
     left: 10%;
+  }
+  .portfolio-page {
+    padding-bottom: 1800px;
   }
 }
