@@ -130,6 +130,7 @@ nav {
   font-family: "Ubuntu";
   font-size: 24pt;
   padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .profile-photo {
@@ -142,13 +143,14 @@ nav {
   padding-top: 20px;
 }
 
-.contact-info h3 {
+.contact-info h2 {
   font-family: "Ubuntu";
-  margin-top: 5px;
+  margin-top: 10px;
+  font-size: 16pt;
 }
 
 .bio-paragraphs {
-  padding-top: 40px;
+  padding-top: 60px;
   width: 70%;
   position: relative;
   left: 15%;
@@ -244,7 +246,16 @@ footer a img {
   width: 20px;
 }
 
+@media only screen and (max-width: 750px) {
+  .profile-photo {
+    width: 30%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
+  .site-links, .link {
+    padding-right: 5px;
+  }
   .landing-page {
     padding-top: 600px;
   }
@@ -256,7 +267,9 @@ footer a img {
     bottom: 275px;
     font-size: 30pt;
   }
-  .site-links, .link {
-    padding-right: 5px;
+  .bio-paragraphs {
+    font-size: 14pt;
+    width: 80%;
+    left: 10%;
   }
 }
