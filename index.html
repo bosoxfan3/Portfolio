@@ -20,17 +20,32 @@
     </div>
   </nav>
   <main role="main">
-    <section class="js-landing-page landing-page">
+    <section hidden class="js-landing-page landing-page">
       <h1 class="main-title">Hi, I'm Daniel!</h1>
       <h2 class="subtitle">I'm a Fullstack Developer With a Passion For React</h2>
     </section>
     <section hidden class="js-bio-page bio-page">
-      <h1>Bio</h1>
-      <h2>Image will go here</h2>
-      <h3>Contact Info</h3>
-      <h4>Bio Paragraphs</h4>
+      <img class="profile-photo" src="./Profile.png" alt="business card picture of Daniel">
+      <div class="contact-info">
+        <h3>San Carlos, CA</h3>
+        <h3>danielacquesta@sbcglobal.net</h3>
+        <h3>650-207-8492</h3>
+      </div>
+      <div class="bio-paragraphs">
+        <p>
+          I love coding because there is absolutely nothing like the euphoria of watching
+          thousands of lines of code turn into a full-fledged, highly-functioning app.
+          I'm especially drawn to the more puzzle-like aspects of coding, such as 
+          algorithm scripting and creating and combining React components.
+        </p>
+        <br>
+        <p>
+          When I'm not coding, you'll find me exercising with my dog, listening to the
+          Pardon My Take podcast, or watching Australian Rules football.
+        </p> 
+      </div>
     </section>
-    <section hidden class="js-portfolio-page">
+    <section class="js-portfolio-page portfolio-page">
       <div class="project">
         <h1>Screenshots</h1>
         <h2>Title</h2>
@@ -61,7 +76,7 @@
       </div>
     </section>
   </main>
-  <footer role="content-info">
+  <footer hidden id="footer" role="content-info">
     <p>Created by Daniel Acquesta</p>
     <a href="https://github.com/bosoxfan3/Portfolio"><img src="https://diversity.github.com/assets/svg/mark-github.svg" alt="github logo"></a>
   </footer>

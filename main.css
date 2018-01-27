@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Poppins";
+  margin: 0;
 }
 
 nav {
@@ -12,10 +13,14 @@ nav {
 }
 
 .logo {
-  width: 50px;
+  width: 45px;
   padding-left: 10px;
   position: relative;
-  top: 3px;
+  top: 6px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .site-links {
@@ -41,7 +46,7 @@ a:hover {
 }
 
 .landing-page {
-  background: url("./IMG_0143.JPG");
+  background: url("./Coogee.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +74,30 @@ a:hover {
 
 .main-title, .subtitle {
   font-family: "Ubuntu";
+}
+
+.bio-page {
+  text-align: center;
+  background-color: rgb(245, 221, 169);
+  padding-bottom: 600px;
+}
+
+.profile-photo {
+  margin-top: 100px;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.contact-info {
+  padding-top: 20px;
+}
+
+.bio-paragraphs {
+  padding-top: 40px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  font-size: 16pt;
 }
 
 footer {
