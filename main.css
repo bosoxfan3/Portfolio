@@ -95,7 +95,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 300px;
-  padding-bottom: 600px;
+  padding-bottom: 1000px;
 }
 
 .main-title {
@@ -103,7 +103,7 @@ nav {
   font-size: 50pt;
   margin: 0;
   position: relative;
-  bottom: 170px;
+  bottom: 140px;
   color: white;
 }
 
@@ -112,7 +112,7 @@ nav {
   font-size: 35pt;
   margin: 0;
   position: relative;
-  bottom: 140px;
+  bottom: 40px;
   color: rgb(92, 91, 91);
 }
 
@@ -244,16 +244,16 @@ footer a img {
   width: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .landing-page {
     padding-top: 600px;
   }
   .main-title {
-    bottom: 450px;
+    bottom: 350px;
     font-size: 40pt;
   }
   .subtitle {
-    bottom: 375px;
+    bottom: 275px;
     font-size: 30pt;
   }
   .site-links, .link {
