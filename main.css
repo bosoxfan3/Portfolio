@@ -112,7 +112,7 @@ nav {
   font-size: 35pt;
   margin: 0;
   position: relative;
-  bottom: 120px;
+  bottom: 140px;
   color: rgb(92, 91, 91);
 }
 
@@ -126,7 +126,9 @@ nav {
   padding-bottom: 600px;
 }
 
-.bio-page h1 {
+.bio-title {
+  font-family: "Ubuntu";
+  font-size: 24pt;
   padding-top: 100px;
 }
 
@@ -140,6 +142,11 @@ nav {
   padding-top: 20px;
 }
 
+.contact-info h3 {
+  font-family: "Ubuntu";
+  margin-top: 5px;
+}
+
 .bio-paragraphs {
   padding-top: 40px;
   width: 70%;
@@ -151,16 +158,64 @@ nav {
 .portfolio-page {
   text-align: center;
   background-color: rgb(245, 221, 169);
-  padding-bottom: 600px;
+  padding-bottom: 1500px;
 }
 
-.restfull {
+#top-section, #bottom-section {
   padding-top: 100px;
 }
 
 .portfolio-img {
-  width: 350px;
-  height: 250px;
+  width: 400px;
+  height: 300px;
+}
+
+button {
+  border-radius: 2px;
+  border-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: rgb(0, 131, 238);
+  padding: 0px 5px 0px 5px;
+}
+
+.tech-logo {
+  display: inline-block;
+}
+
+.tech-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px;
+
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.tech-logo:hover .tooltip-text{
+  visibility: visible;
+}
+
+.restfull {
+  position: relative;
+  left: 25%;
 }
 
 footer {
@@ -187,4 +242,21 @@ footer a {
 
 footer a img {
   width: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing-page {
+    padding-top: 600px;
+  }
+  .main-title {
+    bottom: 450px;
+    font-size: 40pt;
+  }
+  .subtitle {
+    bottom: 375px;
+    font-size: 30pt;
+  }
+  .site-links, .link {
+    padding-right: 5px;
+  }
 }
