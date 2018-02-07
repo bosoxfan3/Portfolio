@@ -136,7 +136,7 @@ nav {
 .profile-photo {
   margin-top: 20px;
   width: 20%;
-  border-radius: 50%;
+  border-radius: 2px;
 }
 
 .contact-info {
