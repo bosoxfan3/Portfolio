@@ -77,24 +77,24 @@ $('.js-bored-button').click(event => {
   }
 });
 
-$('.logo').click(() => {
-  console.log('pingas');
+$('.logo').click(event => {
+  event.preventDefault();
   $('.js-landing-page').removeAttr('hidden');
   $('#footer').removeAttr('hidden');
   $('.js-bio-page').attr('hidden', true);
   $('.js-portfolio-page').attr('hidden', true);
 });
 
-$('.js-bio-link').click(() => {
-  console.log('pingas');
+$('.js-bio-link').click(event => {
+  event.preventDefault();
   $('.js-landing-page').attr('hidden', true);
   $('#footer').attr('hidden', true);
   $('.js-bio-page').removeAttr('hidden');
   $('.js-portfolio-page').attr('hidden', true);
 });
 
-$('.js-portfolio-link').click(() => {
-  console.log('pingas');
+$('.js-portfolio-link').click(event => {
+  event.preventDefault();
   $('.js-landing-page').attr('hidden', true);
   $('#footer').attr('hidden', true);
   $('.js-bio-page').attr('hidden', true);
