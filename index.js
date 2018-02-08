@@ -78,6 +78,7 @@ $('.js-bored-button').click(event => {
 });
 
 $('.logo').click(() => {
+  console.log('pingas');
   $('.js-landing-page').removeAttr('hidden');
   $('#footer').removeAttr('hidden');
   $('.js-bio-page').attr('hidden', true);
@@ -85,6 +86,7 @@ $('.logo').click(() => {
 });
 
 $('.js-bio-link').click(() => {
+  console.log('pingas');
   $('.js-landing-page').attr('hidden', true);
   $('#footer').attr('hidden', true);
   $('.js-bio-page').removeAttr('hidden');
@@ -92,6 +94,7 @@ $('.js-bio-link').click(() => {
 });
 
 $('.js-portfolio-link').click(() => {
+  console.log('pingas');
   $('.js-landing-page').attr('hidden', true);
   $('#footer').attr('hidden', true);
   $('.js-bio-page').attr('hidden', true);
