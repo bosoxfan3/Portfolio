@@ -2,31 +2,31 @@
 
 const STATE = {
   restfull: [
-    {url: './RestFullPics/Landing.png',
+    {url: './RestFullPics/Landing.jpg',
       alt: 'RestFull landing page'},
-    {url: './RestFullPics/Stats.png',
+    {url: './RestFullPics/Stats.jpg',
       alt: 'RestFull stats page'},
-    {url: './RestFullPics/Sleeps.png',
+    {url: './RestFullPics/Sleeps.jpg',
       alt: 'RestFull sleeps page'}
   ],
   currentRestFullPic: 1,
   woofle: [
-    {url: './WooflePics/Landing.png',
+    {url: './WooflePics/Landing.jpg',
       alt: 'Woofle landing page'},
-    {url: './WooflePics/Search.png',
+    {url: './WooflePics/Search.jpg',
       alt: 'Woofle breed search page'},
-    {url: './WooflePics/Results.png',
+    {url: './WooflePics/Results.jpg',
       alt: 'Woofle search results'}
   ],
   currentWooflePic: 1,
   boredBeforeBoard: [
-    {url: './BoredBeforeBoardPics/Landing.png',
+    {url: './BoredBeforeBoardPics/Landing.jpg',
       alt: 'BoredBeforeBoard landing page'},
-    {url: './BoredBeforeBoardPics/TrainSearch.png',
+    {url: './BoredBeforeBoardPics/TrainSearch.jpg',
       alt: 'BoredBeforeBoard train time search'},
-    {url: './BoredBeforeBoardPics/YouTube.png',
+    {url: './BoredBeforeBoardPics/YouTube.jpg',
       alt: 'BoredBeforeBoard youtube search'},
-    {url: './BoredBeforeBoardPics/TicTacToe.png',
+    {url: './BoredBeforeBoardPics/TicTacToe.jpg',
       alt: 'BoredBeforeBoard tictactoe game'}
   ],
   currentBoredBeforeBoardPic: 1
