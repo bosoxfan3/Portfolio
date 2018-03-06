@@ -2,13 +2,13 @@
 
 const STATE = {
   pick16: [
-    {url: './Pick16Pics/LangingPage.png',
+    {url: './Pick16Pics/LangingPage.jpg',
       alt: 'Pick 16 landing page'},
-    {url: './Pick16Pics/Leaderboard.png',
+    {url: './Pick16Pics/Leaderboard.jpg',
       alt: 'Pick 16 leaderboard page'},
-    {url: './Pick16Pics/MakePics.png',
+    {url: './Pick16Pics/MakePics.jpg',
       alt: 'Pick 16 make picks page'},
-    {url: './Pick16Pics/MyPicks.png',
+    {url: './Pick16Pics/MyPicks.jpg',
       alt: 'Pick 16 my picks page'}
   ],
   currentPick16Pic: 1,
