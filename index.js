@@ -1,6 +1,17 @@
 'use strict';
 
 const STATE = {
+  pick16: [
+    {url: './Pick16Pics/LangingPage.png',
+      alt: 'Pick 16 landing page'},
+    {url: './Pick16Pics/Leaderboard.png',
+      alt: 'Pick 16 leaderboard page'},
+    {url: './Pick16Pics/MakePics.png',
+      alt: 'Pick 16 make picks page'},
+    {url: './Pick16Pics/MyPicks.png',
+      alt: 'Pick 16 my picks page'}
+  ],
+  currentPick16Pic: 1,
   restfull: [
     {url: './RestFullPics/Landing.jpg',
       alt: 'RestFull landing page'},
@@ -32,6 +43,12 @@ const STATE = {
   currentBoredBeforeBoardPic: 1
 };
 
+function renderPick16Image() {
+  let result = `<img class="portfolio-img" src="${STATE.pick16[STATE.currentPick16Pic].url}"
+                alt="${STATE.pick16[STATE.currentPick16Pic].alt}">`;
+  $('#pick16-screenshots').html(result);
+}
+
 function renderRestFullImage() {
   let result = `<img class="portfolio-img" src="${STATE.restfull[STATE.currentRestFullPic].url}"
                 alt="${STATE.restfull[STATE.currentRestFullPic].alt}">`;
@@ -49,6 +66,15 @@ function renderBoredBeforeBoardImage() {
                 alt="${STATE.boredBeforeBoard[STATE.currentBoredBeforeBoardPic].alt}">`;
   $('#bored-screenshots').html(result);
 }
+
+$('.js-pick16-button').click(event => {
+  event.preventDefault();
+  renderPick16Image();
+  STATE.currentPick16Pic++;
+  if (STATE.currentPick16Pic === 3) {
+    STATE.currentPick16Pic = 0;
+  }
+});
 
 $('.js-restfull-button').click(event => {
   event.preventDefault();
