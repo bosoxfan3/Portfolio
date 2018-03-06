@@ -2,11 +2,11 @@
 
 const STATE = {
   pick16: [
-    {url: './Pick16Pics/LangingPage.jpg',
+    {url: './Pick16Pics/LandingPage.jpg',
       alt: 'Pick 16 landing page'},
     {url: './Pick16Pics/Leaderboard.jpg',
       alt: 'Pick 16 leaderboard page'},
-    {url: './Pick16Pics/MakePics.jpg',
+    {url: './Pick16Pics/MakePicks.jpg',
       alt: 'Pick 16 make picks page'},
     {url: './Pick16Pics/MyPicks.jpg',
       alt: 'Pick 16 my picks page'}
@@ -71,7 +71,7 @@ $('.js-pick16-button').click(event => {
   event.preventDefault();
   renderPick16Image();
   STATE.currentPick16Pic++;
-  if (STATE.currentPick16Pic === 3) {
+  if (STATE.currentPick16Pic === 4) {
     STATE.currentPick16Pic = 0;
   }
 });
